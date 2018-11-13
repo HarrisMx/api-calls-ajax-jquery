@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Ajax | Jquery</title>
+           <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">                      
+   <script src="https://authservice.priaid.ch/js/enc-base64-min.js"></script>
+   <script src="https://authservice.priaid.ch/js/hmac-md5.js"></script> 
+   <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js"></script>
+
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/hmac-sha1.js"></script> 
+<script type="text/javascript" src="js/functions.js"></script>
+    <style type="text/css">
+        .form{
+            margin-top: 20px;
+        }
+        .diagn{
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Online Clinic</h1>
+            </div>
+          </div>
+        <div class="container">
+
+            <section>
+                <select class="form-control" id="symptoms">
+                        <option selected>Please Select a Symptom</option>
+                </select>
+                
+            </section>
+
+            <section class="form">
+                <form class="form-inline">
+                    <div class="form-group mb-2">
+                    <div class="form-group mx-sm-3 mb-2">
+                      <label for="inputPassword2" class="sr-only">Age</label>
+                      <input type="text" class="form-control age" id="inputPassword2" placeholder="Age">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                            <label for="inputPassword2" class="sr-only">Gender</label>
+                            <select class="form-control" id="gender">
+                                <option>male</option>
+                                <option>female</option>
+                            </select>
+                          </div>
+                    <a class="btn btn-primary mb-2 diagn">Get Diagnosis Info</a>
+                </form>
+            </section>
+            <section class="diagnosis">
+                    <div class="card col-12">
+                            <div class="card-header">
+                              Diagnosis
+                            </div>
+                            <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>Title</th>
+                                        <th>Information</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Mary</td>
+                                        <td>Moe</td>
+                                      </tr>
+                                      <tr>
+                                        <td>July</td>
+                                        <td>Dooley</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>    
+                    </div>
+            </section>
+        </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </body>
+</html>
